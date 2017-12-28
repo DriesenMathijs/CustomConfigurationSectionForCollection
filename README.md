@@ -59,7 +59,7 @@ public class StyleSection : ConfigurationSection
 ## App.config / Web.config
 In your configuration file you will define your custom section with a type (this type is the class of your ConfigurationSection).
 
-The type consists of '<Namespace.ClassName>, <Assembly>'
+The type consists of 'Namespace.ClassName, Assembly'
 
 ```xml
   <configSections>
