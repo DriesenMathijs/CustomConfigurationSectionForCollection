@@ -18,7 +18,7 @@ By the use of the [ConfigurationProperty()] we define our property as an element
 ```csharp
 public class Style : ConfigurationElement
     {
-                [ConfigurationProperty("displayname", DefaultValue = "", IsKey = true, IsRequired = true)]
+        [ConfigurationProperty("displayname", DefaultValue = "", IsKey = true, IsRequired = true)]
         public string DisplayName
         {
             get { return (string)base["displayname"]; }
@@ -34,7 +34,7 @@ This class is responsible to create a collection of our custom elements. This is
 
 ```csharp
 [ConfigurationCollection(typeof(Style))]
-    public class StyleAppearanceCollection : ConfigurationElementCollection
+public class StyleAppearanceCollection : ConfigurationElementCollection
     {
         ...
     }
