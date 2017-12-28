@@ -4,6 +4,8 @@ A simple example of how to create a configuration section in your app.config or 
 
 This example uses a collection of styles
 
+Don't forget to reference System.Configuration to your project
+
 ## Program.cs
 In this class we simply call our ConfigSettings (which is a helper class) to fetch all elements in our configuration & display them on the console
 
@@ -56,6 +58,8 @@ public class StyleSection : ConfigurationSection
 
 ## App.config / Web.config
 In your configuration file you will define your custom section with a type (this type is the class of your ConfigurationSection).
+
+The type consists of '<Namespace.ClassName>, <AssemblyName>'
 
 ```xml
   <configSections>
