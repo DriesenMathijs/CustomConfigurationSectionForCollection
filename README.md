@@ -52,7 +52,8 @@ public class StyleSection : ConfigurationSection
             set { base["Styles"] = value; }
         }
     }
-    ```
+```
+
 ## App.config / Web.config
 In your configuration file you will define your custom section with a type (this type is the class of your ConfigurationSection).
 
@@ -69,14 +70,14 @@ Then you define your custom section, with your collection-tag (StyleSection.cs's
   <styleSection>
     <Styles>
       <Style stylecategory="Headings"
-               displayname="H1"
-               valuename="Heading 1" />
+             displayname="H1"
+             valuename="Heading 1" />
       <Style stylecategory="Headings"
-               displayname="H2"
-               valuename="Heading 2"/>
+             displayname="H2"
+             valuename="Heading 2"/>
       <Style stylecategory="Body"
-         displayname="H5"
-         valuename="Heading 5"/>
+             displayname="H5"
+             valuename="Heading 5"/>
     </Styles>
   </styleSection>
   ```
